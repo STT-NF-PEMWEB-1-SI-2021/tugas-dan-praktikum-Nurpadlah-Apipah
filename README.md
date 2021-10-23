@@ -1,1 +1,0 @@
-# tugas-dan-praktikum-Nurpadlah-Apipah
