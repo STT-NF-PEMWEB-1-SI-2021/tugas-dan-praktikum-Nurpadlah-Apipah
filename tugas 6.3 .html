@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<title>CSSBOX</title>
+<style >
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			display: flex;
+			min-height : 100vh;
+			flex-direction:column;
+			margin: 10px;
+            background : #FFABAB;
+		}
+		#main{
+			display: flex;
+			flex: 1;
+		}
+		#main >article {
+        	background : #FF6666;
+			flex: 1;
+			order: 3;
+            margin : 10px;
+        }
+		#main > nav,
+        #main > aside {
+        	flex : 0 0 20vw;
+		}
+		#main > aside {
+			background: #009999;
+			order: 1;
+            margin : 10px;
+		}
+		header,footer {
+			background: #66CCCC;
+			height: 10vh;
+            margin : 10px;
+		}
+		header, footer, artikel, aside{
+			padding: 1em;
+		}
+</style>
+<body>
+	<header>Header</header>
+	<div id="main"> 
+		<article>Article </article>
+		<aside>Aside</aside>
+	</div>
+	<footer>Footer</footer>
+</body>
+</html>
